@@ -1,0 +1,34 @@
+# === Java & Maven ===
+/target/
+*.class
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Logs ===
+*.log
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === OS-specific ===
+*.swp
+
+# === Spring Boot ===
+*.jar
+*.war
+*.ear
+
+# === Maven Wrapper ===
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# === Secrets ===
+application.yml
+.env
