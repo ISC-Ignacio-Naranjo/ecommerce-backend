@@ -91,6 +91,5 @@ Returns the list of available products.
 Developed by ISC. Jose Ignacio Naranjo Guerra.  
 Feel free to contribute or suggest improvements!
 
-## 📄 License
-
-This project is licensed under the MIT License.
+## 📄 License 
+This project is licensed under the MIT License. 
