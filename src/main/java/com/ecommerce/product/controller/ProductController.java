@@ -9,12 +9,15 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@SecurityRequirement(name = "Bearer Authentication") // ← 🔐 Esto lo aplica a todos los endpoints del controller
 @Tag(name = "Products", description = "Endpoints for managing products")
 @RestController
 @RequestMapping("/api/products")
@@ -28,6 +31,7 @@ public class ProductController {
 
     @Operation(summary = "Create a new product")
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public ProductResponse create(@RequestBody @Valid ProductRequest request) {
         return service.create(request);
     }
