@@ -78,57 +78,54 @@ GET /api/products
 Returns the list of available products.
 
 ## 🚀 Roadmap
+### 📦 Product Module
+- ✅ `POST /api/products`
+- ✅ `GET /api/products`
+- ✅ `PUT /api/products/{id}`
+- ✅ `DELETE /api/products/{id}`
+- ✅ Role-based access (`ADMIN` only for create/update/delete)
+- ✅ DTOs, validation, exception handling
+- ✅ Swagger documentation
+- ✅ Unit tests
 
-### ✅ Completed
+### 🗂️ Category Module
+- ✅ `POST /api/categories`
+- ✅ `GET /api/categories`
+- ✅ `PUT /api/categories/{id}`
+- ✅ `DELETE /api/categories/{id}`
+- ✅ Role-based access (`ADMIN` only for create/update/delete)
+- ✅ Swagger documentation
 
-- **Product & Category Module**
-    - ✅ Create (`POST`)
-    - ✅ Retrieve all (`GET`)
-    - 🔜 Update (`PUT`)
-    - 🔜 Delete (`DELETE`)
+### 🔐 Authentication Module
+- ✅ JWT token generation (register/login)
+- ✅ User roles (`ADMIN`, `CUSTOMER`)
+- ✅ Spring Security with `@PreAuthorize`
+- ✅ Swagger JWT integration
 
-- **Authentication**
-    - ✅ JWT-based login & register
-    - ✅ Role-based authorization (`@PreAuthorize`)
+### 🚨 Error Handling
+- ✅ Custom `ResourceNotFoundException`
+- ✅ `GlobalExceptionHandler`
+- ⚠️ 401/403 error docs pending polish
 
-- **User Roles**
-    - ✅ Admin & Customer roles
-    - ✅ Access restrictions by role
+### 📄 Documentation
+- ✅ Swagger UI with JWT
+- ✅ Response examples and status codes
+- ✅ Schema annotations with OpenAPI
 
-- **Swagger Integration**
-    - ✅ Swagger UI available
-    - ✅ Bearer token support for authorized endpoints
-
-- **Error Handling**
-    - ✅ Global exception handler
-    - ✅ Standardized API error response format
-
-- **Testing**
-    - ✅ Unit tests for Product & Category services
-
-- **Environment Configuration**
-    - ✅ `application.yml` & `application-sample.yml` for safe config
-    - ✅ `.gitignore` to exclude secrets and logs
-
-- **Repository Setup**
-    - ✅ Pushed to GitHub with clean commit history (no secrets)
-
----
-
-### 🔜 Upcoming
-
-- ⏳ `PUT` and `DELETE` endpoints for Product & Category
-- ⏳ Order module (CRUD + relationships)
-- ⏳ Payment gateway integration (Stripe or similar)
-- ⏳ Docker containerization
-- ⏳ CI/CD pipeline setup with GitHub Actions
-- ⏳ Deployment to cloud provider (e.g., Render, Railway, Fly.io)
+### 🔜 Coming next
+- 🟡 Order module (place/view/cancel orders)
+- 🟡 Customer profile management
+- 🟡 Payment simulation
+- 🟡 Docker setup for local deployment
+- 🟡 CI/CD with GitHub Actions
+- 🟡 Role-based dashboard APIs
 
 
 ## 🧑‍💻 Author
 
 Developed by ISC. Jose Ignacio Naranjo Guerra.  
 Feel free to contribute or suggest improvements!
+ 
+## 📄 License
 
-## 📄 License 
 This project is licensed under the MIT License. 
