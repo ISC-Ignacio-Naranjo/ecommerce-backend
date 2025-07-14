@@ -79,12 +79,48 @@ Returns the list of available products.
 
 ## 📌 Roadmap
 
-- [x] Product CRUD
-- [ ] Authentication with JWT
-- [ ] Order module
-- [ ] User profiles and roles
-- [ ] Payment integration
-- [ ] Deployment with Docker and CI/CD
+### 📦 Product Module
+- ✅ `POST /api/products`
+- ✅ `GET /api/products`
+- ✅ `PUT /api/products/{id}`
+- ✅ `DELETE /api/products/{id}`
+- ✅ Role-based access (`ADMIN` only for create/update/delete)
+- ✅ DTOs, validation, exception handling
+- ✅ Swagger documentation
+- ✅ Unit tests
+
+### 🗂️ Category Module
+- ✅ `POST /api/categories`
+- ✅ `GET /api/categories`
+- ✅ `PUT /api/categories/{id}`
+- ✅ `DELETE /api/categories/{id}`
+- ✅ Role-based access (`ADMIN` only for create/update/delete)
+- ✅ Swagger documentation
+
+### 🔐 Authentication Module
+- ✅ JWT token generation (register/login)
+- ✅ User roles (`ADMIN`, `CUSTOMER`)
+- ✅ Spring Security with `@PreAuthorize`
+- ✅ Swagger JWT integration
+
+### 🚨 Error Handling
+- ✅ Custom `ResourceNotFoundException`
+- ✅ `GlobalExceptionHandler`
+- ⚠️ 401/403 error docs pending polish
+
+### 📄 Documentation
+- ✅ Swagger UI with JWT
+- ✅ Response examples and status codes
+- ✅ Schema annotations with OpenAPI
+
+### 🔜 Coming next
+- 🟡 Order module (place/view/cancel orders)
+- 🟡 Customer profile management
+- 🟡 Payment simulation
+- 🟡 Docker setup for local deployment
+- 🟡 CI/CD with GitHub Actions
+- 🟡 Role-based dashboard APIs
+
 
 ## 🧑‍💻 Author
 
