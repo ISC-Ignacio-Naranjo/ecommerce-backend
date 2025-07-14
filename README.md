@@ -77,14 +77,53 @@ GET /api/products
 
 Returns the list of available products.
 
-## 📌 Roadmap
+## 🚀 Roadmap
 
-- [x] Product CRUD
-- [ ] Authentication with JWT
-- [ ] Order module
-- [ ] User profiles and roles
-- [ ] Payment integration
-- [ ] Deployment with Docker and CI/CD
+### ✅ Completed
+
+- **Product & Category Module**
+    - ✅ Create (`POST`)
+    - ✅ Retrieve all (`GET`)
+    - 🔜 Update (`PUT`)
+    - 🔜 Delete (`DELETE`)
+
+- **Authentication**
+    - ✅ JWT-based login & register
+    - ✅ Role-based authorization (`@PreAuthorize`)
+
+- **User Roles**
+    - ✅ Admin & Customer roles
+    - ✅ Access restrictions by role
+
+- **Swagger Integration**
+    - ✅ Swagger UI available
+    - ✅ Bearer token support for authorized endpoints
+
+- **Error Handling**
+    - ✅ Global exception handler
+    - ✅ Standardized API error response format
+
+- **Testing**
+    - ✅ Unit tests for Product & Category services
+
+- **Environment Configuration**
+    - ✅ `application.yml` & `application-sample.yml` for safe config
+    - ✅ `.gitignore` to exclude secrets and logs
+
+- **Repository Setup**
+    - ✅ Pushed to GitHub with clean commit history (no secrets)
+
+---
+
+### 🔜 Upcoming
+
+- ⏳ `PUT` and `DELETE` endpoints for Product & Category
+- ⏳ Order module (CRUD + relationships)
+- ⏳ Payment gateway integration (Stripe or similar)
+- ⏳ Docker containerization
+- ⏳ CI/CD pipeline setup with GitHub Actions
+- ⏳ Deployment to cloud provider (e.g., Render, Railway, Fly.io)
+
 
 ## 🧑‍💻 Author
 
