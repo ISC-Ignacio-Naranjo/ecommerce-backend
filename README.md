@@ -42,7 +42,7 @@ com.ecommerce.[feature]
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ecommerce-backend.git
+   git clone https://github.com/ISC-Ignacio-Naranjo/ecommerce-backend.git
    cd ecommerce-backend
    ```
 
