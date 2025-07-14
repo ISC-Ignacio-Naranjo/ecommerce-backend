@@ -42,7 +42,7 @@ com.ecommerce.[feature]
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ecommerce-backend.git
+   git clone https://github.com/ISC-Ignacio-Naranjo/ecommerce-backend.git
    cd ecommerce-backend
    ```
 
@@ -77,8 +77,7 @@ GET /api/products
 
 Returns the list of available products.
 
-## 📌 Roadmap
-
+## 🚀 Roadmap
 ### 📦 Product Module
 - ✅ `POST /api/products`
 - ✅ `GET /api/products`
@@ -126,7 +125,7 @@ Returns the list of available products.
 
 Developed by ISC. Jose Ignacio Naranjo Guerra.  
 Feel free to contribute or suggest improvements!
-
+ 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. 

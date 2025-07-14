@@ -32,3 +32,6 @@ mvnw.cmd
 # === Secrets ===
 application.yml
 .env
+
+# Config
+src/main/resources/application.yml
